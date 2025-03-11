@@ -1,12 +1,11 @@
-var screenWidth = screen.width;
-var screenHeight = screen.height;
+
 
 function preload(){
    
 }
 
 function setup(){
-    createCanvas(screenWidth, screenHeight, Canvas1);
+    createCanvas(windowWidth, windowHeight, W);
 }
 function draw(){
     background("blue");
