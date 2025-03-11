@@ -6,13 +6,13 @@ function preload(){
 
 function setup(){
     createCanvas(windowWidth, windowHeight);
-    function windowResized() {
-        resizeCanvas(windowWidth, windowHeight);
-      }
+    
 }
 
 
 function draw(){
     background("blue");
-    
+    function windowResized() {
+        resizeCanvas(windowWidth, windowHeight);
+    }
 }
