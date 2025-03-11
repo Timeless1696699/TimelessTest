@@ -1,6 +1,6 @@
 function preload(){
-    screenWidth = document.body.style.width;
-    screenHeight = document.body.style.width;
+    var screenWidth = document.body.style.width;
+    var screenHeight = document.body.style.width;
 }
 
 function setup(){
