@@ -5,7 +5,7 @@ function preload(){
 }
 
 function setup(){
-    createCanvas();
+    createCanvas("Canvas1");
 }
 function draw(){
     background("blue");
