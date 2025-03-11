@@ -12,7 +12,7 @@ function setup(){
 
 function draw(){
     background("blue");
-    
+    circle(mouseX, mouseY, 20);
 }
 
 //function windowResized() {
