@@ -9,14 +9,12 @@ function setup(){
     canvas = createCanvas(windowWidth, windowHeight);
     
 }
-window.addEventListener("keydown", playerMovement);
-function playerMovement(e){
+
+function keyPressed(){
     keyPressed = e.keyPressed;
-    console.log(keyPressed);
-    if(keyPressed == '37'){
+    if(keyCode = LEFT_ARROW){
         playerX = playerX - 10;
-    }
-    if(keyPressed == '39'){
+    }else if(keyCode == RIGHT_ARROW){
         playerX = playerX + 10;
     }
 }
