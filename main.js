@@ -10,14 +10,6 @@ function setup(){
     
 }
 
-function keyPressed(){
-    keyPressed = e.keyPressed;
-    if(keyCode = LEFT_ARROW){
-        playerX = playerX - 10;
-    }else if(keyCode == RIGHT_ARROW){
-        playerX = playerX + 10;
-    }
-}
 
 function draw(){
     background("blue");
@@ -29,7 +21,13 @@ function draw(){
     }
     //white circle drawn at mouse position
     circle(mouseX, mouseY, 10);
-
+    if (keyIsDown(LEFT_ARROW) === true) {
+        playerX -= 5;
+      }
+    
+      if (keyIsDown(RIGHT_ARROW) === true) {
+        playerX += 5;
+      }
     player =  square(playerX, playerY, 30);
 }
 
