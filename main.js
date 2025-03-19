@@ -1,5 +1,5 @@
-playerX = 0;
-playerY = 0;
+var playerX = 0;
+var playerY = 0;
 
 function preload(){
    
