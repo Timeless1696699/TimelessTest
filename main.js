@@ -20,7 +20,7 @@ function draw(){
     }
 
     //white circles drawn at mouse position
-    circle(mouseX, mouseY, 100);
+    circle(mouseX, mouseY, 10);
 }
 
 //function windowResized() {
