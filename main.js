@@ -1,4 +1,5 @@
-
+playerX = 20;
+playerY = 40;
 
 function preload(){
    
@@ -18,9 +19,10 @@ function draw(){
     }else {
         fill(255);
     }
-
-    //white circles drawn at mouse position
+    //white circle drawn at mouse position
     circle(mouseX, mouseY, 10);
+
+    player =  square(playerX, playerY, 30);
 }
 
 //function windowResized() {
