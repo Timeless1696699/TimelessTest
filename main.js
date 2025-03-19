@@ -9,7 +9,17 @@ function setup(){
     canvas = createCanvas(windowWidth, windowHeight);
     
 }
-
+window.addEventListener("keydown", playerMovement);
+function playerMovement(e){
+    keyPressed = e.keyPressed;
+    console.log(keyPressed);
+    if(keyPressed == '37'){
+        playerX = playerX - 10;
+    }
+    if(keyPressed == '39'){
+        playerX = playerX + 10;
+    }
+}
 
 function draw(){
     background("blue");
