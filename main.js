@@ -1,5 +1,5 @@
-playerX = 20;
-playerY = 40;
+playerX = windowWidth/2;
+playerY = windowHeight/14;
 
 function preload(){
    
