@@ -31,9 +31,12 @@ function draw(){
         playerX += 5;
     }
     //player movement
-    playerY = playerY + playerVelocity;
-    if(playerY == "60"){
-        playerVelocity = 0;
+    function keyPressed(){
+        if(keyCode == UP_ARROW){
+            playerY = playerY - 10;
+        } else{
+            playerY = playerY + playerVelocity;
+        }
     }
     player =  square(playerX, playerY, 30);
 }
