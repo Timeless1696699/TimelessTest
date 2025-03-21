@@ -44,7 +44,7 @@ function draw(){
     
     //    }
     //}
-    player =  square(playerX, playerY, 30);
+    player =  fill(225) && square(playerX, playerY, 30);
 }
 
 //function windowResized() {
