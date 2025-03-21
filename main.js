@@ -14,16 +14,9 @@ function setup(){
 
 function draw(){
     background("blue");
-    //when mouse button is pressed, circles turn black
-    if (mouseIsPressed === true) {
-        fill(0);
-    }else {
-        fill(255);
-    }
-    //white circle drawn at mouse position
     playerVelocity = playerVelocity + 1;
 
-    circle(mouseX, mouseY, 10);
+    
     if (keyIsDown(LEFT_ARROW) === true){
         playerX -= 5;
     }
@@ -45,6 +38,13 @@ function draw(){
     //    }
     //}
     player =  fill(225) && square(playerX, playerY, 30);
+
+    circle(mouseX, mouseY, 10);
+    if (mouseIsPressed === true) {
+        fill(0);
+    }else {
+        fill(255);
+    }
 }
 
 //function windowResized() {
