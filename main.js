@@ -24,27 +24,30 @@ function draw(){
         playerX += 5;
     }
     playerY = playerY + playerVelocity;
-    if(playerY >= 100){
+    if(playerY >= 300){
       playerVelocity = 0;
       playerY = playerY - 1;
     }
-    //player movement
-    //function keyPressed(){
-    //    if(keyCode == UP_ARROW){
-    //        playerY = playerY - 10;
-    //    } else{
-    //        playerY = playerY + playerVelocity;
     
-    //    }
-    //}
+    
+    
+    
     player =  fill(225) && square(playerX, playerY, 30);
 
-    circle(mouseX, mouseY, 10);
     if (mouseIsPressed === true) {
         fill(0);
     }else {
         fill(255);
     }
+    circle(mouseX, mouseY, 10);
+  console.log(playerVelocity)
+}
+function keyPressed(){
+      if(keyCode === UP_ARROW){
+        console.log("its here!");
+        playerVelocity = playerVelocity - 20;
+        playerY = playerY + playerVelocity;
+      }
 }
 
 //function windowResized() {
