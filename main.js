@@ -28,7 +28,9 @@ function draw(){
       playerVelocity = 0;
       playerY = playerY - 1;
     }
-    
+    if(playerY <= 0){
+      playerVelocity = 0;
+    }
     
     
     
