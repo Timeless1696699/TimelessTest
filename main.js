@@ -1,13 +1,14 @@
 var playerX = 0;
 var playerY = 0;
 var playerVelocity = 0;
+g = false;
 
 function preload(){
    
 }
 
 function setup(){
-    canvas = createCanvas(windowWidth, windowHeight, myCanvas);
+  canvas = createCanvas(windowWidth, windowHeight, myCanvas);
     
 }
 
@@ -26,10 +27,16 @@ function draw(){
     playerY = playerY + playerVelocity;
     if(playerY >= 300){
       playerVelocity = 0;
-      playerY = playerY - 1;
+      if(g === false){
+        playerY = playerY - 1;
+      }else if(g === true){
+        playerY = 0;
+      }
+      
     }
     if(playerY <= 0){
       playerVelocity = 0;
+      g = true;
     }
     
     
