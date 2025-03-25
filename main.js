@@ -37,6 +37,8 @@ function draw(){
     if(playerY <= 0){
       playerVelocity = 0;
       g = true;
+    }else{
+      g = false;
     }
     
     
