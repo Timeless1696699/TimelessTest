@@ -4,7 +4,7 @@ var playerVelocity = 0;
 g = false;
 
 function preload(){
-  setFloor = (screen.height)/4
+  setFloor = (screen.height*3)/4
 }
 
 function setup(){
