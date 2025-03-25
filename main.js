@@ -4,7 +4,7 @@ var playerVelocity = 0;
 g = false;
 
 function preload(){
-   
+  setFloor = (screen.height)/4
 }
 
 function setup(){
@@ -25,7 +25,7 @@ function draw(){
         playerX += 5;
     }
     playerY = playerY + playerVelocity;
-    if(playerY >= 300){
+    if(playerY >= setFloor){
       playerVelocity = 0;
       if(g === false){
         playerY = playerY - 1;
