@@ -31,6 +31,7 @@ function draw(){
         playerY = playerY - 1;
       }else if(g === true){
         playerY = 0;
+        playerVelocity = 0;
       }
       
     }
